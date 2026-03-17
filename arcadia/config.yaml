@@ -1,9 +1,8 @@
 name: "Arcadia"
-version: "beta"
+version: "1.0.0"
 slug: "arcadia"
-description: "Arcadia ×Ô¶¯»¯ÔËÎ¬Æ½Ì¨"
+description: "Arcadia è‡ªåŠ¨åŒ–è¿ç»´å¹³å°"
 url: "https://github.com/SuperManito/Arcadia"
-
 image: "supermanito/arcadia"
 
 startup: "application"
@@ -12,6 +11,7 @@ init: false
 
 arch:
   - amd64
+  - aarch64
 
 ports:
   5678/tcp: 5678
@@ -22,6 +22,8 @@ ports_description:
 webui: "http://[HOST]:[PORT:5678]/"
 
 map:
-  - type: addon_config
-    read_only: false
-    path: /arcadia
+  - config:rw
+  - share:rw
+
+options: {}
+schema: {}
