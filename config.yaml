@@ -1,0 +1,27 @@
+name: "Arcadia"
+version: "beta"
+slug: "arcadia"
+description: "Arcadia 自动化运维平台"
+url: "https://github.com/SuperManito/Arcadia"
+
+image: "supermanito/arcadia"
+
+startup: "application"
+boot: "auto"
+init: false
+
+arch:
+  - amd64
+
+ports:
+  5678/tcp: 5678
+
+ports_description:
+  5678/tcp: "Arcadia Web UI"
+
+webui: "http://[HOST]:[PORT:5678]/"
+
+map:
+  - type: addon_config
+    read_only: false
+    path: /arcadia
