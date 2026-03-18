@@ -1,0 +1,26 @@
+{
+  "name": "Arcadia",
+  "version": "1.0.0-beta.8",
+  "slug": "arcadia",
+  "description": "Arcadia 平台",
+  "url": "https://github.com/SuperManito/Arcadia",
+  "startup": "application",
+  "boot": "auto",
+  "init": false,
+  "arch": [
+    "amd64",
+    "aarch64"
+  ],
+  "ports": {
+    "5678/tcp": 5678
+  },
+  "ports_description": {
+    "5678/tcp": "Arcadia Web UI"
+  },
+  "webui": "http://[HOST]:[PORT:5678]/",
+  "map": [
+    "config:rw"
+  ],
+  "options": {},
+  "schema": {}
+}

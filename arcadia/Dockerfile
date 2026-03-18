@@ -1,0 +1,1 @@
+FROM supermanito/arcadia:beta
